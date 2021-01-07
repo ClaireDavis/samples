@@ -21,6 +21,5 @@ cd "$ROOT_PATH" || exit
 
 # Sync iOS pods lasts
 cd ios_using_plugin || exit
-bundle check || bundle install
-bundle exec pod install $@
+  pod install
 cd - || exit
