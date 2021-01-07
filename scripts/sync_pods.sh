@@ -10,21 +10,13 @@ cd "$ROOT_PATH" || exit
 
 # Sync Flutter pods first
 cd flutter_module_using_plugin || exit
-  for dir in $(find . -name pubspec.yaml -exec dirname {} \;);
-  do
-    cd "$dir" || exit
-    flutter pub get
-    cd - || exit
-  done
+  flutter pub get
+  cd - || exit
 cd "$ROOT_PATH" || exit
 
 cd hello || exit
-  for dir in $(find . -name pubspec.yaml -exec dirname {} \;);
-  do
-    cd "$dir" || exit
-    flutter pub get
-    cd - || exit
-  done
+  flutter pub get
+  cd - || exit
 cd "$ROOT_PATH" || exit
 
 # Sync iOS pods lasts
