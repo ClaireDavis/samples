@@ -23,22 +23,6 @@ jobs:
         uses: subosito/flutter-action@v1.4.0
         with:
           flutter-version: '1.22.5'
-#      - name: Setup flutter environment
-#        run: |
-#            echo 'export FLUTTER_HOME=$HOME/sdks/flutter' >> $BASH_ENV
-#            echo 'export FLUTTER_ROOT=$FLUTTER_HOME' >> $BASH_ENV
-#            echo 'export FLUTTER_VERSION=1.22.5' >> $BASH_ENV
-#            echo 'export FLUTTER_CHANNEL=stable' >> $BASH_ENV
-#            echo 'export PATH=$FLUTTER_HOME/bin:$FLUTTER_HOME/bin/cache/dart-sdk/bin:$PATH' >> $BASH_ENV
-#
-#      - name: Download flutter
-#        run: |
-#            mkdir -p $HOME/sdks
-#            curl --retry 3 -L -o /tmp/flutter.zip https://storage.googleapis.com/flutter_infra/releases/${FLUTTER_CHANNEL}/macos/flutter_macos_${FLUTTER_VERSION}-${FLUTTER_CHANNEL}.zip
-#            unzip -q /tmp/flutter.zip -d $HOME/sdks
-#            flutter config --enable-macos-desktop
-#            flutter doctor
-#            flutter precache --force --ios --android --macos
 
       - name: Run sync podfiles
         run: |

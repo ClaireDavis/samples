@@ -21,7 +21,7 @@ cd "$ROOT_PATH" || exit
 
 # Sync iOS pods lasts
 cd ios_using_plugin || exit
-  flutter precache
+  gem install bundler
   gem install cocoapods
   bundle exec pod install --allow-root --deployment
 cd - || exit
