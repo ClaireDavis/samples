@@ -23,5 +23,7 @@ cd "$ROOT_PATH" || exit
 cd ios_using_plugin || exit
   gem install bundler
   gem install cocoapods
+  flutter precache --force --ios --android --macos
+
   bundle exec pod install --allow-root --deployment
 cd - || exit
